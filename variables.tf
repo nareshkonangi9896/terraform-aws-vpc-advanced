@@ -65,3 +65,16 @@ variable "db_group_tags" {
     type = map
     default = {}
 }
+variable "is_peering_required" {
+    type = bool
+    default = false
+}
+variable "requestor_vpc_id" {
+}
+
+variable "default_route_table_id" {
+  
+}
+variable "default_cidr_block" {
+  
+}
