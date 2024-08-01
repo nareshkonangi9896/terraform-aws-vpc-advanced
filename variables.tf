@@ -1,6 +1,9 @@
 variable "cidr_block" {
     type = string
 }
+variable "environment" {
+    type = string
+}
 variable "enable_dns_hostnames" {
     type = bool
     default = true

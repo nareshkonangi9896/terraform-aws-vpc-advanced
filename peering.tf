@@ -5,7 +5,7 @@ resource "aws_vpc_peering_connection" "peering" {
   vpc_id        = var.requestor_vpc_id
   auto_accept   = true
   tags =merge({
-    Name = "VPC peering between default and ${var.project_name}"
+    Name = "VPC peering between default and ${var.project_name}-${var.environment}"
   },
   var.comman_tags)
 }
